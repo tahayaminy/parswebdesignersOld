@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  html{
+      width: 100%;
+      height: 100%;
+  }
+  body{
+      background-image: url('./ff.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  input,.fa-headphones,label{
+      display: inline-block;
+      margin: 3% auto;
+      cursor: pointer;
+      direction: ltr;
+      border-radius: 5px;
+      padding: 2.5px;
+      background-color: #fefefe;
+      color: #42413d;
+      outline: none;
+      border: none;
+  }
+  i{display: inline-block;}
+  .fa-headphones{
+      font-size: 300%;
+      background-color: initial;
+  }
+  .d-none{display: none;}
+  .success{color:#4bb543;}
+
+  .fa-headphones:hover{color: #fefefe;transition: .2s;}
+  input{
+      width: 200px;
+  }
+  section{
+      position: absolute;
+      width: 300px;
+      text-align: center;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  #music,#cover{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }

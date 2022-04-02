@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat</title>
+    <link rel="stylesheet" href="https://parswebdesigners.github.io/icon/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body dir="rtl">
+    <i onclick="showchat()" id="chaticon" class="fas fa-comment-dots"></i>
+    <section id="chatbox">
+      <i onclick="hiddenchat()" class="far fa-times-circle"></i>
+      <div id="header">
+        <i class="far fa-user-circle"></i>esm
+        <div id="typing">
+          typing
+          <div id="bullet">
+            <span class="type"></span>
+            <span class="type"></span>
+            <span class="type"></span>
+          </div>
+        </div>
+      </div>
+      <div id="main">
+        
+      </div>
+      <div id="footer">
+        <i onclick="sendmsg()" class="fas fa-location-arrow"></i>
+        <textarea placeholder="Message" id="msg"></textarea>
+      </div>
+    </section>
+  </body>
+  <script src="./index.js"></script>
+</html>

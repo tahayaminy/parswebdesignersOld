@@ -1,0 +1,273 @@
+@import "headerfooter";
+.title {
+  color: $danger;
+  @include bold;
+  margin: 5%;
+}
+
+.favorite {
+  @include hideScroll;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  overflow-x: auto;
+  div {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    div {
+      height: 70%;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px 5px 0 0;
+    }
+    p {
+      height: calc(30% - 12px);
+      width: calc(100% - 12px);
+      padding: 6px;
+      font-size: 90%;
+    }
+  }
+}
+#gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+  justify-content: space-evenly;
+  @media screen and (max-width:$res){
+    grid-template-columns: auto;
+  }
+  div {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+}
+.contimg {
+  position: relative;
+  p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($color: $dark, $alpha: 0.75);
+    width: calc(100% - 10%);
+    padding: 5%;
+    text-align: center;
+    color: $light;
+  }
+}
+.backstage {
+  p {
+    display: none;
+  }
+}
+@mixin reset{
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  background-color:unset;
+  border: none;
+  border-radius: none;
+}
+#archive {
+  div {
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    margin: 10% auto;
+    border: 3px solid $darkblue;
+    text-align: center;
+    border-radius: 5px;
+    border-top: none;
+    @media screen and (max-width:$res){
+      width: 250px;
+    }
+    div {
+      @include reset;
+      height: 70%;
+      width: calc(100% + 1px);
+      background-size: cover;
+      background-position: center;
+      background-origin: border-box;
+      background-clip: border-box;
+      border-radius: 2px 2px 0 0;
+      div {
+        @include reset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: $darkblue, $alpha: .7);
+        color: $light;
+        font-size: 150%;
+      }
+    }
+    p {
+      @include reset;
+      text-align: right;
+      padding: 10px;
+    }
+  }
+}
+
+
+
+
+
+
+#article{
+  @media screen and (min-width:900px){
+    display: inline-block;
+  }
+  width: 90%;
+  border-radius: 10px;
+  border: 5px solid $darkblue;
+  margin: 7% auto;
+  @media screen and (min-width:900px) {
+    width: 61%;
+    margin: 7% 2.5%;
+  }
+}
+
+aside{
+  @media screen and (min-width:900px) {
+    float: left;    
+    width: 27%;
+    margin: 7% 2.5%;
+  }
+  #related{
+    @include hideScroll;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    overflow-x: auto;
+    @media screen and (min-width:900px){
+      grid-auto-flow: row;
+      overflow-x: none;
+    }
+    div {
+      width: 200px;
+      @media screen and (min-width:900px){
+        width: 100%;
+      }
+      height: 200px;
+      border-radius: 5px;
+      cursor: pointer;
+      div {
+        height: 70%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px 5px 0 0;
+      }
+      p {
+        height: calc(30% - 12px);
+        width: calc(100% - 12px);
+        padding: 6px;
+        font-size: 90%;
+      }
+    }    
+  }
+}
+
+
+
+
+
+
+#thumb{
+  margin: -1px;
+  img{
+    width: 100%;
+    display: block;
+    border-radius: 5px 5px 0 0;  
+    margin: auto;
+  }
+}
+#content{
+  padding: 2%;
+  h1{
+    margin: 5% 1%;
+  }
+  p{
+    text-indent: 5%;
+    margin: 7% auto;
+  }
+  #tags{
+    margin: 5%;
+    padding: 2% 0;
+    span{
+      background-color: $darkblue;
+      color: $lightblue;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+}
+#share{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  img{
+    width: 10%;
+    display: inline-block;
+    margin: 2%;
+  }
+}
+#comment{
+  width: 90%;
+  margin: 10% auto;
+  p:nth-child(3){
+    text-indent: 5%;
+    margin-bottom: 5%;
+  }
+  textarea,input{
+    resize: none;
+    border: 1px solid $dark;
+    border-radius: 3px;
+    padding: 1%;
+    background-color: $lightblue;
+    color:$dark;
+  }
+  textarea:focus,input:focus{
+    outline: 2px solid $dark;
+    border-radius: 3px;
+  }
+  textarea{
+    width: 50%;
+    min-width: 200px;
+    max-width: 500px;
+  }
+  button{
+    @include bold;
+    float: left;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: $dark;
+    color:$light;
+    transition: .2s;
+    outline: $dark;
+  }
+  button:hover{
+    background-color: $darkblue;
+    color: $dark;
+  }
+}
+#comments{
+  width: 90%;
+  margin: 10% auto;
+  span{
+    display: block;
+    float: left;
+    color: $danger;
+  }
+}
+.commenttxt{
+  margin: 10% auto;
+}

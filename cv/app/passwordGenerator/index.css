@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1c0c5b;
+  color: #916bbf;
+  padding: 3%;
+}
+article {
+  max-width: 339px;
+  margin: auto;
+  border-radius: 10px;
+  border: 3px solid #3d2c8d;
+}
+section {
+  padding: 10% 5%;
+}
+.check {
+  background-color: #3d2c8d;
+  padding: 3px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+.rad {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type="checkbox"]:checked ~ .check::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  color: #c996cc;
+  font-size: 15px;
+}
+input[type="radio"]:checked ~ .rad::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f111";
+  color: #c996cc;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.checkbox {
+  position: relative;
+  user-select: none;
+  display: inline-block;
+  direction: rtl;
+  padding-right: 35px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.checkbox:hover .check {
+  background-color: #916bbf;
+}
+.box {
+  margin: 5px;
+}
+#output,#output:focus {
+  min-height: 50px;
+  width: 90%;
+  margin: 50px auto 0 auto;
+  border-radius: 50px;
+  background: #1c0c5b;
+  box-shadow: inset 5px 5px 10px #0b0524, inset -5px -5px 10px #2d1392;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;outline: none;
+  color: #c996cc;
+  text-align: center;
+  direction: ltr;
+}
+button {
+    background-color: #916BBF;
+    color: #3D2C8D;
+    transition: .1s;
+    border-color: #3D2C8D;
+    border-radius: 40px;
+    font-size: 120%;
+    font-weight: bolder;
+    padding: 3%;
+    display: block;
+    margin: 50px auto 0 auto;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #c996cc;
+    color: #1C0C5B;
+    border-color: #916BBF;
+}
+button:active{
+    background-color: #916BBF;
+    color: #3D2C8D;
+    border-color: #3D2C8D;
+}

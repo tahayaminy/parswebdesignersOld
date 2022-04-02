@@ -1,0 +1,82 @@
+$dark: #293241;
+$lightblue: #98c1d9;
+$darkblue: #3d5a80;
+$danger: #ee6c4d;
+$light: #e0fbfc;
+$res:500px;
+
+@mixin bold {
+  font-weight: 900;
+  font-variation-settings: "wght" 900, "dots" 7;
+}
+@mixin hideScroll {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  & {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  direction: rtl;
+  background-color: $light;
+  color: $dark;
+}
+nav {
+  @include hideScroll;
+  background-color: $lightblue;
+  padding: 1%;
+  color: $dark;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  p,
+  a {
+    @include bold;
+    display: inline-block;
+    margin: 1%;
+    border: 3px solid $darkblue;
+    border-left: none;
+    border-right: none;
+    padding: 0.7%;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: $dark;
+    i {
+      font-size: 200%;
+    }
+  }
+  p:first-child a:first-child{
+    border:none;
+  }
+  p:hover,
+  a:hover {
+    background-color: $darkblue;
+    color: $lightblue;
+    transition: 0.1s;
+  }
+  p:first-child {
+    border: none;
+  }
+}
+footer {
+  text-align: center;
+  padding: 3%;
+  background-color: $dark;
+  color: $light;
+}
+#slct {
+  border: 3px solid $darkblue;
+  border-top: none;
+  border-bottom: none;
+}

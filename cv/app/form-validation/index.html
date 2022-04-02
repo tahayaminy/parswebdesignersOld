@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form validation</title>
+    <link rel="stylesheet" href="https://parswebdesigners.github.io/icon/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form>
+      <div>
+        <input oninvalid="event.preventDefault()" type="text" onblur="namecheck(this,0)" minlength="3" required/>
+        <label class="Lanime" for="text">text</label>
+      </div>
+      <p class="p">enter at least 3</p>      
+      <div>
+        <input oninvalid="event.preventDefault()" onblur="emailcheck(this,1)" type="email" required/>
+        <label class="Lanime" for="email">email</label>
+      </div>
+      <p class="p">enter valid email</p>
+      <div>
+        <input oninvalid="event.preventDefault()" type="password" onblur="passcheck(this,2)" minlength="6" required/>
+        <label class="Lanime" for="password">password</label>
+      </div>
+      <p style="display: block;">
+        <span class="passcheck">length at least 6</span>
+        <span class="passcheck">numbers</span>
+        <span class="passcheck">LETTERS</span>
+        <span class="passcheck">letters</span>
+        <span class="passcheck">symbols</span>
+      </p>
+      <div id="number">
+        <i onclick="down()" class="fas fa-angle-down"></i>
+        <input id="numbervalue" value="1" type="number" min="1" max="5" />
+        <i onclick="up()" class="fas fa-angle-up"></i>
+      </div>
+      <label class="checkbox"
+        >one
+        <input type="checkbox" />
+        <span class="check"></span>
+      </label>
+      <label class="checkbox"
+        >tow
+        <input type="checkbox" />
+        <span class="check"></span>
+      </label>
+      <label class="checkbox"
+        >three
+        <input type="checkbox" />
+        <span class="check"></span>
+      </label>
+      <br><br><br>
+      <label class="checkbox">
+        one
+        <input checked name="radio" type="radio" />
+        <span class="rad check"></span>
+      </label>
+      <label class="checkbox">
+        tow
+        <input name="radio" type="radio" />
+        <span class="rad check"></span>
+      </label>
+      <label class="checkbox">
+        three
+        <input name="radio" type="radio" />
+        <span class="rad check"></span>
+      </label>
+      <div><input type="color" value="#B85C38" /></div>
+      <div><input type="submit" value="button" /></div>
+    </form>
+  </body>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #3f3351;
+  color: #e9a6a6;
+}
+p {
+  width: 50%;
+  margin: 20px auto;
+  background-color: #1f1d36;
+  padding: 3%;
+  border-radius: 10px;
+  user-select: none;
+}
+i{transition: .1s;}
+i:hover {
+  cursor: pointer;
+  color: #864879;
+}
+i:active{
+    color: #e9a6a6;
+}
+#pannel {
+  padding: 3%;
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pannel > i {
+  font-size: 150%;
+  display: inline-block;
+  margin-right: 10%;
+  padding: 2.5%;
+  box-shadow: 3px 3px 5px #2e253b, -3px -3px 5px #504167;
+  border-radius: 5px;
+}
+#pannel>i:active{
+    box-shadow: inset 3px 3px 5px #2e253b, inset -3px -3px 5px #504167;
+}
+#pannel > input {
+  border: none;
+  outline: none;
+  font-size: 110%;
+  min-height: 45px;
+  background-color: #3f3351;
+  color: #e9a6a6;
+  caret-color: #e9a6a6;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 5px #2e253b, inset -3px -3px 5px #504167;
+  padding: 2%;
+}
+#pannel > input:focus {
+  box-shadow: 3px 3px 5px #2e253b, -3px -3px 5px #504167;
+}
+#pannel > input::selection {
+  background-color: #e9a6a640;
+}
+.fa-check-circle {
+  float: left;
+  font-size: 150%;
+}
+.clear {
+  clear: both;
+}

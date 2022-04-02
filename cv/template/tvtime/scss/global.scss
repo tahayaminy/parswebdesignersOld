@@ -1,0 +1,158 @@
+$dark: #003049;
+$red: #d62828;
+$orange: #f77f00;
+$yellow: #fcbf49;
+$white: #eae2b7;
+$yeldark:hsl(40, 97%, 50%);
+$whdark:hsl(51, 55%, 50%);
+
+*,
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: $white;
+  color: $dark;
+}
+nav {
+  background-color: $yellow;
+  color: $dark;
+  section section {
+    a {
+      color: $dark;
+      font-size: 150%;
+      transition: 0.1s;
+    }
+    a:hover {
+      color: $orange;
+    }
+  }
+}
+header {
+  margin-bottom: 1%;
+}
+#slct {
+  // text-decoration: underline;
+  border-bottom: 5px solid $red;
+  border-radius: 5px;
+}
+footer {
+  background-color: $dark;
+  color: $white;
+  text-align: center;
+}
+#wave {
+  width: 100%;
+  margin-bottom: -10px;
+}
+/**/
+#card {
+  cursor: pointer;
+  background-color: $yellow;
+  transition: 0.1s;
+}
+#card:hover {
+  background-color: $orange;
+  transition: 0.1s;
+}
+.titlescroll {
+  border-top: 1px solid $yeldark;
+  background-color: $yellow;
+}
+.scrollcontainer {
+  border-top: 1px solid $yeldark;
+  border-bottom: 1px solid $yeldark;
+  background-color: $yellow;
+  margin-bottom: 5%;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ex::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+.ex {
+  overflow: auto;
+  /* this will hide the scrollbar in mozilla based browsers */
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  /* this will hide the scrollbar in internet explorers */
+  -ms-overflow-style: none;
+  overflow-x: scroll; scroll-behavior: smooth;
+  
+}
+.ex>div{transition: .1s;border-radius: 5px;cursor: pointer;}
+.ex>div:hover{background-color:$orange;}
+.btnscroll{
+    border-radius: 25%; background-color: rgba($color: $dark, $alpha: .5);
+    transition: .1s;
+}
+.btnscroll:hover{
+    background-color: rgba($color: $dark, $alpha: 1.0);
+}
+.plyrbtn{
+  color: $dark;
+  text-decoration: none;
+  font-size: 250%;
+}
+#progress-bar:focus{
+  border: none;
+  outline: none;
+}
+.modal-content{
+  background-color: $white;
+  cursor: default;
+}
+#backdrop{
+  width: 100%;
+  height: auto;
+}
+#postvs{
+  background-color: $yellow;
+  border: 1px solid $whdark;
+}
+textarea{
+  background-color: $white !important;
+}
+textarea:focus{
+  border-color: $orange !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0.25rem rgba($color: $orange, $alpha: 0.25) !important;
+}
+#comments{
+  border-bottom: 1px solid #d2d2d2;
+  div>p{
+    background-color: $white;
+                  border-radius: 10px;
+                  margin-right: 10px;
+  }
+}
+#tst{
+  background-color: $dark;
+  color: $white;
+  padding: 2%;
+  border-radius: 5px;
+  transition: .3s;
+}
+#tst:hover{
+  background-color: $white;
+  color: $dark;
+}
+.fa-times{
+  border: none;
+  background-color: $white;
+  font-size: 200%;
+  color: $red;
+  &:focus{
+    outline: none;
+  }
+}
+#progress-bar{
+  clear:both;width: 300px;direction: ltr;
+  @media screen and (max-width:460px){
+    width: 100%;    
+  }
+}

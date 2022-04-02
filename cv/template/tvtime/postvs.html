@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/bootstrap/dist/css/bootstrap.css" />
+    <script src="./css/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://parswebdesigners.github.io/icon/css/all.min.css"/>
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/iransansxv.woff" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="https://parswebdesigners.github.io/font/iransansxv.woff2" />  
+<link rel="preload" as="font" type="font/ttf" crossorigin href="https://parswebdesigners.github.io/font/hack.ttf" />
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/staticfonts/iransansx-bold.woff" />
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/staticfonts/iransansx-regular.woff" />
+<link rel="stylesheet" href="https://parswebdesigners.github.io/font/font.css"/>
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+
+  <body dir="rtl">
+    <nav class="container-fluid p-2">
+      <section class="row text-center">
+        <section class="col">
+          <a class="fas fa-home" href="index.html"></a>
+        </section>
+        <section class="col">
+          <a class="fas fa-video" href="video.html"></a>
+        </section>
+        <section class="col">
+          <a class="fas fa-tv" href="seri.html"></a>
+        </section>
+        <section class="col">
+          <a class="fas fa-music" href="music.html"></a>
+        </section>
+      </section>
+    </nav>
+    <header>
+        <img id="backdrop" src="./img/video/1.jpg">
+    </header>
+    <br />
+
+    <article class="container rounded" id="postvs">
+        <div class="row border-bottom">
+          <section class="col-7 col-sm-7 p-3">
+            <h1 dir="ltr" class="pt-4">name</h1>
+            <div
+              dir="ltr"
+              class="row d-flex justify-content align-items-center mt-5"
+              style="margin-left: 3%"
+            >
+              <span class="col">
+                <span><img src="./img/icons8-imdb-48.png" alt="" /></span>
+                <span class="d-inline-block fs-5">5.7/10</span>
+              </span>
+              <span class="col">[2016]</span>
+            </div>
+            <div
+              dir="ltr"
+              class="row d-flex justify-content align-items-center mt-5"
+            >
+              <span class="col>">
+                <span
+                  ><img src="./img/metacritic-icon.svg" width="45px" alt=""
+                /></span>
+                <span>
+                  <span style="background-color:#f00; padding: 1%">18%</span>
+                </span>
+              </span>
+              <span class="col" dir="rtl">
+                <span class="fas fa-stopwatch"></span
+                ><span style="font-family: eng,fa;margin-right:5px;" dir="ltr">115 min</span>
+              </span>
+            </div>
+            <div class="m-5" style="font-family: eng,fa;">رده سنی: PG-13</div>
+            <p><b class="fs-5">ژانر: </b>Action, Adventure, Sci-Fi</p>
+          </section>
+          <section class="col-5 col-sm-5 p-3">
+            <img
+              src="./img/video/poster.jpg"
+              class="img-fluid rounded"
+              alt=""
+            />
+          </section>
+        </div>
+        <section class="row p-5">
+            کالوم لینچ ، خاطرات جدش آگیلار د نرها را کاوش می کند و مهارت های یک استاد قاتل را بدست می آورد ، قبل از اینکه به جامعه مخفی تمپلار بپردازد...
+        </section>
+        <a href="#" class="fas fa-cloud-download-alt" id="tst" download> دانلود با کیفیت و حجم مناسب</a> 
+
+        
+         
+        
+        <section class="mt-5">
+          <p class="pt-3 me-4"><b>دیدگاه‌ها</b></p>
+          <br /><br />
+            <form method="POST">
+              <div class="mt-3 w-75 p-4" style="margin-bottom:20%;position:relative;">
+                    
+                    <div style="position: static;">
+                          
+                      <textarea class="form-control" name="newcomment" rows="5" placeholder="اینجا دیدگاه خودت رو بنویس..." style="resize: none;"></textarea>
+                      <button type="submit" name="sendcomment" class="btn btn-success m-2 d-block float-start">ارسال</button>
+                      
+                    </div>
+                    
+              </div>
+            </form>
+  
+          <section
+            id="comments"
+            class="row position-relative pt-3 p-5 float-none"
+            dir="ltr"
+          >
+            <div class="d-flex align-items-start mt-2" dir="rtl">
+              <img src="./user.png" class="" style="width: 75px" />
+              <p
+                class="d-inline-block w-75 p-4"                
+              >
+              <b>name</b><br><br>
+               <span>text</span>
+                <br><br>
+                <span class="text-info" style="cursor:pointer;" onclick="reply(this)" id="<?=$comment['id'];?>">پاسخ
+                  <svg class="text-info" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
+                    <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"/>
+                  </svg>
+                </span>
+              </p>
+            </div>
+            
+                  <div
+                  class="d-flex align-items-start"
+                  style="padding-right: 10%"
+                  dir="rtl"
+                >
+                  <img src="./user.png" class="" style="width: 75px" />
+                  <p
+                    class="d-inline-block w-75 p-4"
+                  >
+                  <b>name</b><br><br>
+                  <span>text</span>
+                  </p>
+                </div>
+  
+                
+            
+            
+          </section>
+          <br /><br /><br />
+        </section>
+  
+        <p class="pt-3"><b>تریلرها</b></p>
+        <section class="row col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 m-2 p-0">
+            <video controls>
+              <source src="./admin/uploads/<?=($ms)? 'seri':'video';?>/<?=$post['name'].$post['year'];?>/<?=$post['trailer'];?>">
+            </video>
+            <div class="mt-3 row">
+              <h3 style="font-family: eng,fa;">name 2016</h3>
+            </div>
+          </section>
+        
+        
+        <br /><br />
+  
+        <section
+          id="rmbrdr"
+          class="row p-5"
+          style="border-top: 1px solid #d2d2d2; border-bottom: 1px solid #d2d2d2"
+        >
+          <section class="m-2">
+            <span>کشور تولید کننده: </span><span>countery</span>
+          </section>
+          <section class="m-2"><span>بازیگران: </span><span>actors</span></section>
+          <section class="m-2"><span>کارگردانان:</span><span>director</span></section>
+        </section>
+        <br class="delrel" /><br class="delrel" />
+        <div
+      class="p-2 titlescroll"
+    >
+      <b class="p-3">فیلم‌های سینمایی</b>
+    </div>
+    <article
+      class="container-fluid position-relative pt-3 scrollcontainer"
+      dir="ltr"
+    >
+      <section
+        class="row flex-row flex-nowrap ex"
+        onscroll="scrolled(this)"
+      >
+        <div
+          class="d-block row col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 m-2 p-0"
+        >
+          <img src="./img/video/1.jpg" class="rounded img-fluid" alt="" />
+          <div class="mt-3 row">
+            <h3>name</h3>
+            <div class="col mb-1">genr</div>
+          </div>
+        </div>
+        <div class="d-block row col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 m-2 p-0">
+            <img
+              src="./img/video/2.jpg"
+              class="rounded img-fluid"
+              alt=""
+            />
+            <div class="mt-3 row">
+              <h3>name</h3>
+              <div class="col mb-1">
+                genr
+              </div>
+            </div>
+          </div>
+          <div class="d-block row col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 m-2 p-0">
+            <img
+              src="./img/video/3.jpg"
+              class="rounded img-fluid"
+              alt=""
+            />
+            <div class="mt-3 row">
+              <h3>name</h3>
+              <div class="col mb-1">
+                genr
+              </div>
+            </div>
+          </div>
+          <div class="d-block row col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 m-2 p-0">
+            <img
+              src="./img/video/4.jpg"
+              class="rounded img-fluid"
+              alt=""
+            />
+            <div class="mt-3 row">
+              <h3>name</h3>
+              <div class="col mb-1">
+                genr
+              </div>
+            </div>
+          </div>
+          <div class="d-block row col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 m-2 p-0">
+            <img
+              src="./img/video/5.jpg"
+              class="rounded img-fluid"
+              alt=""
+            />
+            <div class="mt-3 row">
+              <h3>name</h3>
+              <div class="col mb-1">
+                genr
+              </div>
+            </div>
+          </div>
+          <div
+          class="d-block row col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 m-2 p-0"
+        >
+          <img src="./img/video/1.jpg" class="rounded img-fluid" alt="" />
+          <div class="mt-3 row">
+            <h3>name</h3>
+            <div class="col mb-1">genr</div>
+          </div>
+        </div>
+
+        <section class="position-absolute top-50">
+          <div
+            onclick="left(this)"
+            class="btnscroll position-absolute start-0 translate-middle-y d-none"
+          >
+            <img src="./left.svg" alt="" width="60px" />
+          </div>
+          <div
+            onclick="right(this)"
+            class="btnscroll position-absolute end-0 translate-middle-y d-sm-block d-none"
+          >
+            <img src="./right.svg" alt="" width="60px" />
+          </div>
+        </section>
+      </section>
+    </article>
+        
+        <br>
+      </article>
+
+    <img id="wave" src="./img/wave.svg" />
+    <footer class="container-fluid pb-0">
+      <div class="row">
+        <p>
+          &copy; هر نوع کپی برداری بدون درج مستقیم لینک و نام این گروه غیر مجاز
+          است.
+        </p>
+        <br />
+      </div>
+    </footer>
+  </body>
+  <script src="./js/scroll.js"></script>
+  <script>
+    var same;
+    function reply(x){
+        var id=x.getAttribute("id");
+        var elem=x.parentElement.parentElement;
+        if(same!=elem){
+          same=elem;
+          if(document.getElementById('formreply')){
+            document.getElementById('formreply').remove();
+          }
+          var formreply='<form method="POST" action="" id="formreply" class="w-75" dir="rtl"><input class="d-none" type="text" value="'+id+'" name="idy"><textarea class="form-control" name="newreply" rows="5" placeholder="اینجا پاسخ خودت رو بنویس..." style="resize: none;"></textarea><button type="submit" name="sendreply" class="btn btn-success m-2 d-block float-start">ارسال</button></form>';
+          elem.insertAdjacentHTML("afterend",formreply);
+          console.log(id);
+        }else{
+          document.getElementById('formreply').remove();
+          same=null;
+        }
+    }
+  </script>
+</html>

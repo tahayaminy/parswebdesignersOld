@@ -1,0 +1,187 @@
+*,
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #eae2b7;
+  color: #003049;
+}
+
+nav {
+  background-color: #fcbf49;
+  color: #003049;
+}
+nav section section a {
+  color: #003049;
+  font-size: 150%;
+  transition: 0.1s;
+}
+nav section section a:hover {
+  color: #f77f00;
+}
+
+header {
+  margin-bottom: 1%;
+}
+
+#slct {
+  border-bottom: 5px solid #d62828;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #003049;
+  color: #eae2b7;
+  text-align: center;
+}
+
+#wave {
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+/**/
+#card {
+  cursor: pointer;
+  background-color: #fcbf49;
+  transition: 0.1s;
+}
+
+#card:hover {
+  background-color: #f77f00;
+  transition: 0.1s;
+}
+
+.titlescroll {
+  border-top: 1px solid #fba904;
+  background-color: #fcbf49;
+}
+
+.scrollcontainer {
+  border-top: 1px solid #fba904;
+  border-bottom: 1px solid #fba904;
+  background-color: #fcbf49;
+  margin-bottom: 5%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ex::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
+.ex {
+  overflow: auto;
+  /* this will hide the scrollbar in mozilla based browsers */
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  /* this will hide the scrollbar in internet explorers */
+  -ms-overflow-style: none;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.ex > div {
+  transition: 0.1s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ex > div:hover {
+  background-color: #f77f00;
+}
+
+.btnscroll {
+  border-radius: 25%;
+  background-color: rgba(0, 48, 73, 0.5);
+  transition: 0.1s;
+}
+
+.btnscroll:hover {
+  background-color: #003049;
+}
+
+.plyrbtn {
+  color: #003049;
+  text-decoration: none;
+  font-size: 250%;
+}
+
+#progress-bar:focus {
+  border: none;
+  outline: none;
+}
+
+.modal-content {
+  background-color: #eae2b7;
+  cursor: default;
+}
+
+#backdrop {
+  width: 100%;
+  height: auto;
+}
+
+#postvs {
+  background-color: #fcbf49;
+  border: 1px solid #c6b139;
+}
+
+textarea {
+  background-color: #eae2b7 !important;
+}
+
+textarea:focus {
+  border-color: #f77f00 !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0.25rem rgba(247, 127, 0, 0.25) !important;
+}
+
+#comments {
+  border-bottom: 1px solid #d2d2d2;
+}
+#comments div > p {
+  background-color: #eae2b7;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#tst {
+  background-color: #003049;
+  color: #eae2b7;
+  padding: 2%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#tst:hover {
+  background-color: #eae2b7;
+  color: #003049;
+}
+
+.fa-times {
+  border: none;
+  background-color: #eae2b7;
+  font-size: 200%;
+  color: #d62828;
+}
+.fa-times:focus {
+  outline: none;
+}
+
+#progress-bar {
+  clear: both;
+  width: 300px;
+  direction: ltr;
+}
+@media screen and (max-width: 460px) {
+  #progress-bar {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ادیتور آنلاین پارسکد,ادیتور آنلاین ParsCode,ویرایشگر حرفه‌ای آنلاین کد">
+    <meta name="description" content="ادیتور آنلاین پارسکد، بهینه شده برای گوشی‌های هوشمند با قابلیت فول اسکرین و نمایش یک در یک؛ ParsCode اولین ادیتور آنلاین ایرانی تک صفحه ایی در دنیای وب">
+    <title>ParsCode</title>
+
+    <script src="./js/codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="./js/codemirror/lib/codemirror.css">
+
+    <script src="./js/codemirror/mode/javascript/javascript.js"></script>
+    <script src="./js/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="./js/codemirror/mode/xml/xml.js"></script>
+    <script src="./js/codemirror/mode/css/css.js"></script>
+    <script src="./js/codemirror/addon/edit/closebrackets.js"></script>
+    <script src="./js/codemirror/addon/edit/closetag.js"></script>
+    <script src="./js/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="./js/codemirror/addon/edit/matchtags.js"></script>
+    <script src="./js/codemirror/addon/fold/xml-fold.js"></script>
+    <script src="./js/codemirror/addon/selection/active-line.js"></script>
+    <script src="./js/codemirror/addon/fold/xml-fold.js"></script>
+    <script src="./js/codemirror/addon/fold/foldcode.js"></script>
+    <script src="./js/codemirror/addon/fold/foldgutter.js"></script>
+    <script src="./js/codemirror/addon/fold/brace-fold.js"></script>
+    <script src="./js/codemirror/addon/fold/xml-fold.js"></script>
+    <script src="./js/codemirror/addon/fold/indent-fold.js"></script>
+    <script src="./js/codemirror/addon/fold/markdown-fold.js"></script>
+    <script src="./js/codemirror/addon/fold/comment-fold.js"></script>
+    <link rel="stylesheet" href="./js/codemirror/addon/fold/foldgutter.css" />
+    <script src="./js/codemirror/addon/scroll/simplescrollbars.js"></script>
+    <link rel="stylesheet" href="./js/codemirror/addon/scroll/simplescrollbars.css">
+
+
+    <link rel="stylesheet" href="./js/codemirror/theme/eclipse.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/mdn-like.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/neat.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/neo.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/solarized.css">
+
+    <link rel="stylesheet" href="./js/codemirror/theme/ayu-mirage.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/the-matrix.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/yonce.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/paraiso-dark.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/material-darker.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/material-palenight.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/dracula.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="./js/codemirror/theme/ayu-dark.css">
+
+
+    <link rel="stylesheet" href="./css/parscode.css">
+    <link rel="icon" type="image/png" href="./favicon.png" />
+</head>
+
+<body onresize="sesize()">
+    <article id="article">
+        <section style="position: relative;">
+            <section id="codeeditor">
+                
+            </section>
+            <iframe id="browser" style="background-color: #fff;display: none;border-radius: 5px;"></iframe>
+            <button onclick="editorkey(this)" id="editorkey">Run!</button>
+        </section>
+
+    </article>
+    <section id="particles-js"></section>
+    <section id="menuicon" onclick="menuicon()">
+        <div>
+            <div id="top"></div>
+        </div>
+        <div>
+            <div id="bottom"></div>
+        </div>
+    </section>
+    <section id="menu">
+        <p onclick="closeFullscreen(this)" id="aspect">aspect ratio 1:1</p>
+        <p onclick="openFullscreen(this)" id="full">fullscreen</p>
+        <p>themes</p>
+        <select onchange="selecttheme(this)">
+            <optgroup label="Light">
+                <option value="eclipse">eclipse</option>
+                <option value="mdn-like">mdn-like</option>
+                <option value="neat">neat</option>
+                <option value="neo">neo</option>
+                <option value="solarized">solarized</option>
+            </optgroup>
+            <optgroup label="Dark">
+                <option value="ayu-dark">ayu-dark</option>
+                <option value="ayu-mirage" selected>ayu-mirage</option>
+                <option value="the-matrix">the-matrix</option>
+                <option value="yonce">yonce</option>
+                <option value="paraiso-dark">paraiso-dark</option>
+                <option value="material-darker">material-darker</option>
+                <option value="material-palenight">material-palenight</option>
+                <option value="dracula">dracula</option>
+                <option value="monokai">monokai</option>
+            </optgroup>
+        </select>
+        <div id="pannel">
+            <div>
+                <p style="cursor: default;">gallery</p>
+                <div><input type="text" id="name" placeholder="name" oninput="check(this)"></div>
+                <div><input type="file" id="file" onchange="check(this)"></div>
+                <div style="display: flex;justify-content: center;">
+                    <svg id="first" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                        <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg>
+                    <span onclick="embeded(this)" id="second"
+                        style="display: none;cursor: pointer;align-items: center;"><span>add</span><svg
+                            style="color: #138a36" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                            <path
+                                d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                        </svg></span>
+                </div>
+            </div>
+        </div>
+        <div id="show"></div>
+    </section>
+    <script src="./js/parscode.js?v=11"></script>
+    <script src="./js/particles.js-master/particles.js"></script>
+    <script src="./js/particles.js-master/demo/js/app.js"></script>
+</body>
+
+</html>

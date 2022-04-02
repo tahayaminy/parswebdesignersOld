@@ -1,0 +1,90 @@
+@import url("./global/font.css");
+@import url("./global/footer.css");
+
+body,html{
+    margin: 0;padding:0;
+    width: 100%;height: 100%;
+    color: #dfe1df;
+    background-color: #201a14;
+}
+a{
+    text-decoration: none;
+    color: #dfe1df;
+}
+.courses{
+    background-image: url("../img/web-design-2906159.jpg");
+    display: block;
+    background-repeat: no-repeat; 
+    height:100%; 
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+.courses > div{
+    width: 100%;height: 100%;
+    background-color:rgba(0, 0, 0, .7);
+    transition:.5s;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.courses:hover > div{
+    background-color: rgba(0, 0, 0, 0);
+}
+.courses > div > div{
+    display: inline-block;
+    background-color: #201a14;
+    transition:.5s;
+    padding: 3%;
+    font-size: 150%;border-radius: 10px;
+}
+.courses:hover > div > div{
+    color: #67513e;
+    background-color: #dfe1df;
+    font-size: 200%;
+    font-variation-settings: "wght" 700;
+}
+.editor{
+    height: 100%;width: 100%;
+    position: relative;
+    background-color: #151019;
+    font-family: en;
+}
+#particles-js{
+    position: absolute;
+    display: block;
+    width: 100%;height: 100%;
+}
+#containersymbol{
+    position: absolute;
+    width: 100%;height: 100%;
+    pointer-events: none;
+}
+.symbol{
+    height: 75%;
+    display: flex;
+    align-items: center;justify-content: center;
+}
+
+.codeeditortxt{
+    height: 25%;
+    display: flex;
+    align-items: center;justify-content: center;
+    
+}
+.codeeditortxt > div {
+    display: inline-block;
+    padding: 2% 4%;
+    font-size: 150%;
+    background-color: #151019;color: #88c8ff;
+    border-radius: 5px;border: 3px solid #88c8ff;
+    transition:.5s;
+}
+#particles-js:hover + #containersymbol .codeeditortxt > div{
+    background-color: #88c8ff;color: #151019;
+    font-size: 200%;font-weight: bold;
+}
+
+
+

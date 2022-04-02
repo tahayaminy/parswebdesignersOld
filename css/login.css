@@ -1,0 +1,47 @@
+@import url("./global/font.css");
+
+*{
+    margin: 0;padding: 0;
+}
+body,html{
+    background-color: #151019;
+    height: 100%;width: 100%;
+    color: #88c8ff;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+form{
+    width: 50%;
+    min-width: 200px;
+    max-width: 500px;
+    background-color: rgba(136, 200, 255,.5);
+    position: absolute;
+    direction: rtl;
+    padding: 5%;
+    border-radius: 10px;
+    pointer-events: none;
+}
+form > input{
+    background-color: rgba(136, 200, 255,.5);
+    border: 2px solid #88c8ff;
+    width: 70%;
+    padding: 2%;
+    caret-color: #151019;
+    color: #151019;
+    border-radius: 5px;
+    pointer-events: auto;
+}
+form > button{
+    background-color: rgba(21, 16, 25,.5);
+    border: none;
+    padding: 2%;
+    color: #88c8ff;
+    border-radius: 5px;
+    float: left;
+    pointer-events: auto;
+    cursor: pointer;
+}

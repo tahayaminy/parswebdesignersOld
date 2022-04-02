@@ -1,0 +1,85 @@
+@import url("dashhead.css");
+#container-editor {
+    width: 90%;
+    margin: 10% auto 5% auto;
+}
+button,textarea{
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+button{
+    cursor: pointer;
+}
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+    border-radius: 5px 5px 0 0;
+}
+
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+    border-radius: 0 0 5px 5px;
+    padding: 3%;
+    min-height: 200px;
+}
+
+.seobox>textarea {
+    width: 98%;
+    background-color: #201a14;
+    color: #dfe1df;
+}
+
+.seobox {
+    margin: auto;
+    width: 80%;
+}
+
+#addcodevalue {
+    margin-right: 10%;
+    background-color: #88c8ff;
+    padding: 1%;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.codevalue {
+    border: 5px dotted #6e75a8;
+    border-radius: 5px;
+    padding: 5%;
+}
+.codevalue>b , .codevalue>select , .codevalue>textarea{
+    display: block;
+    margin-bottom: 10%;
+}
+.codevalue>textarea {
+    background-color: #88c8ff;
+    color: #151019;
+    direction: ltr;
+}
+
+.codevalue>select {
+    background-color: #88c8ff;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+}
+#publishbtn{
+    background-color: #138a36;
+    color: #dfe1df;
+    padding: 1.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+#draftbtn{
+    background-color: #67513e;
+    color: #dfe1df;
+    margin-right: 12%;
+    padding: 1.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+#lessoncont{
+    resize: both;
+}

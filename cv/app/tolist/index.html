@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tolist</title>
+    <link rel="stylesheet" href="https://parswebdesigners.github.io/icon/css/all.min.css"/>
+    <link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/iransansxv.woff" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="https://parswebdesigners.github.io/font/iransansxv.woff2" />  
+<link rel="preload" as="font" type="font/ttf" crossorigin href="https://parswebdesigners.github.io/font/hack.ttf" />
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/staticfonts/iransansx-bold.woff" />
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/staticfonts/iransansx-regular.woff" />
+<link rel="stylesheet" href="https://parswebdesigners.github.io/font/font.css"/>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body dir="rtl">
+    <article>
+      <section id="pannel">
+        <input placeholder="کاری که باید انجام بدم..." type="text" id="work"  onkeypress="if(event.keyCode === 13){add()}"/>
+        <i class="fas fa-clipboard-list" onclick="add()"></i>
+      </section>
+      <section id="lists">
+          <p>hello
+            <i class="fas fa-check-circle" onclick="end(this)"></i>
+            <i class="clear"></i>
+          </p>
+      </section>
+    </article>
+  </body>
+  <script src="./index.js"></script>
+</html>

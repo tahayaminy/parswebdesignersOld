@@ -1,0 +1,202 @@
+@import url("./global/font.css");
+@import url("./global/footer.css");
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #dfe1df;
+    background-color: #151019;
+}
+
+
+a {
+    color: #6e75a8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #88c8ff;
+}
+
+#page {
+    border-bottom: 2px dashed #6e75a8;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#page:hover {
+    border-bottom: 2px solid #88c8ff;
+}
+
+.breadcrumb {
+    margin: 5%;
+    font-size: 115%;
+}
+
+article {
+    background-image: url("../img/web-design-2906159.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0;
+}
+
+article>section {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#courseinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    margin-bottom: 20%;
+}
+
+#courseinfo img {
+    border-radius: 50%;
+    width: 60%;
+    min-width: 100px;
+    max-width: 500px;
+}
+
+#courseinfo div:first-child {
+    text-align: center;
+    width: 30%;
+}
+
+#courseinfo div:last-child {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 5px 30px;
+    margin: 30px 0;
+    width: 50%;
+}
+
+#courseinfo div h1,#courseinfo div p:nth-child(2),#courseinfo div p:nth-child(3) {
+    color: #201a14;
+}
+
+#courseinfo div p:last-child {
+    color: #67513e;
+}
+
+@media only screen and (max-width:500px) {
+    #courseinfo {
+        flex-direction: column;
+        padding: 30px 0;
+        justify-content: flex-start;
+    }
+    #courseinfo div:first-child {
+        width: 50%;
+        text-align: right;
+    }
+    #courseinfo img {
+        width: 40%;
+    }
+}
+
+#section {
+    padding-bottom: 200px;
+}
+
+#section>div {
+    min-width: 200px;
+    max-width: 30%;
+    background-color: rgb(223, 225, 223);
+    border-radius: 5px;
+    margin: 50px auto;
+    color: #201a14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: 10px;
+    flex-direction: column;
+
+}
+
+
+#section>div>p {
+    text-align: center;
+    border-radius: 9px;
+    width: 70%;
+    background: linear-gradient(145deg, #eff1ef, #c9cbc9);
+    box-shadow: 5px 5px 8px #bbbdbb, -5px -5px 8px #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+
+}
+
+
+#section>div>div {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+#section>div>div>a {
+    width: 80%;
+    border-radius: 9px;
+    text-indent: 20px;
+    margin: 10px 8% 10px 0;
+    background-color: rgb(223, 225, 223);
+    box-shadow: inset 5px 5px 8px #bbbdbb, inset -5px -5px 8px #ffffff;
+    display: flex;align-items: center;
+    padding: 8px;
+}
+
+
+#section>div>div>a:last-child {
+    margin-bottom: 30px;
+}
+
+#section>div>div>a:hover {
+    box-shadow: inset -5px 5px 8px #bbbdbb, inset 5px -5px 8px #ffffff;
+}
+
+
+
+@media only screen and (min-width:1440px) and (max-width:2000px){
+    #section>div{
+        border-radius: 10px;
+    }
+    #section>div>div>a{
+        border-radius: 12px;
+    }
+
+}
+@media only screen and (min-width:2000px){
+    #section>div{
+        border-radius: 10px;
+    }
+    #section>div>div>a{
+        border-radius: 20px;
+    }
+    
+}
+@media only screen and (min-width:1024px) {
+    #section>div>div>a{
+        padding-top: 10px;padding-bottom: 10px;
+        padding: 10px 10px 10px 10px;
+    }
+}
+@media only screen and (min-width:1440px) {
+    #section>div>div>a{
+        margin: 20px 25px 20px 0;
+        padding: 20px;
+    }
+    #section>div>div>a:last-child {
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (min-width:2000px) {
+    #section>div>div>a{
+        padding: 30px;
+    }
+}

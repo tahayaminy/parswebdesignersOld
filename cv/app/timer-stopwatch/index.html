@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>timer</title>
+    <link rel="stylesheet" href="https://parswebdesigners.github.io/icon/css/all.min.css"/>
+    <link rel="stylesheet" href="./global.css" />
+  </head>
+  <body>
+    <nav>
+      <i class="stopwatch fas menu fa-hourglass-start" onclick="change(true)"></i>
+      <i class="hourglass fas menu fa-stopwatch" onclick="change(false)"></i>
+    </nav>
+
+    <section class="hourglass">
+      <div id="backwave">
+        <img src="wave.svg" />
+        <img src="wave.svg" />
+        <img src="wave.svg" />
+      </div>
+      <div id="form">
+        <label for="min">M</label>
+        <input type="number" value="0" min="0" max="60" id="min" />
+        <span>:</span>
+        <input type="number" value="0" min="0" max="60" id="sec" />
+        <label for="sec">S</label>
+      </div>
+    </section>
+    <section class="stopwatch">
+      <div id="stopwatch">
+        <span id="h">0</span>
+        <span>:</span>
+        <span id="m10">0</span><span id="m01">0</span>
+        <span>:</span>
+        <span id="s10">0</span><span id="s01">0</span>
+      </div>
+    </section>
+
+    <footer>
+      <i id="hourglass-end" class="fas fa-hourglass-end  d-none" onclick="hourglassEnd()"></i>
+      <i id="hourglass-start" class="hourglass fas fa-hourglass-start" onclick="hourglassStart()"></i>
+      <i class="stopwatch fas fa-undo-alt" onclick="SE()"></i>
+    </footer>
+  </body>
+  <script src="./main.js"></script>
+</html>

@@ -1,0 +1,148 @@
+@import url("dashhead.css");
+form{
+    width: 90%;
+    margin: auto auto;
+    border:5px dashed #201a14;
+    border-radius: 5px;
+    padding:calc(5% - 10px);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+form .input2,
+form .input2:hover,
+form .input2:focus,
+form .input2:-webkit-autofill,
+form .input2:-webkit-autofill:hover,
+form .input2:-webkit-autofill:focus{
+    width: 30%;
+    min-width: 200px;
+    max-width: 500px;
+    height: 35px;
+    border: 2px solid #201a14;
+    border-radius: 5px;
+    background-color: #67513e;
+    margin: 1%;
+    caret-color: #dfe1df;
+    color: #dfe1df;
+    -webkit-text-fill-color: #dfe1df;
+    padding: .5%;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.inputFile::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.inputFile::before {
+    content: 'Upload';
+    display: inline-block;
+    background-color: #67513e;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: #dfe1df;
+}
+form>div{
+    display: inline-block;
+}
+form>div>div{
+    display: flex;align-items: center;
+}
+@media only screen and (max-width: 425px){
+    form>div>div{
+        display: block;align-items: stretch;
+    }
+    form>div>div>div{
+        margin-top: 5%;
+    }
+    form>div{
+        margin-top: 5%;
+    }
+}
+form .input,
+form .input,
+form .input:hover,
+form .input:focus,
+form .input:-webkit-autofill,
+form .input:-webkit-autofill:hover,
+form .input:-webkit-autofill:focus{
+    width: 38%;
+    min-width: 250px;
+    max-width: 600px;
+    height: 35px;
+    border: 2px solid #201a14;
+    border-radius: 5px;
+    background-color: #67513e;
+    margin: 1%;
+    caret-color: #dfe1df;
+    color: #dfe1df;
+    padding: .5%;
+    -webkit-text-fill-color: #dfe1df;
+    transition: background-color 5000s ease-in-out 0s;
+}
+textarea{
+    padding: 1%;
+    width: 70%;
+    min-width: 250px;
+    max-width: 700px;
+    height: 200px;
+    border: 2px solid #201a14;
+    border-radius: 5px;
+    background-color: #67513e;
+    margin: 1%;
+    caret-color: #dfe1df;
+    color: #dfe1df;
+    resize: none;
+    -webkit-text-fill-color: #dfe1df;
+}
+.newcourse{
+    padding: 1% 3%;
+    background-color: #138a36;
+    color: #dfe1df;
+    white-space: nowrap;
+    border: none;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+}
+table{
+    width: 50%;
+    min-width: 250px;
+    max-width: 700px;
+    border: 1px solid #67513e;
+    margin: auto auto;
+    color: #dfe1df;
+    border-collapse: collapse;
+}
+table tr:first-child{
+    background-color: #201a14;
+}
+.tr:nth-child(2n){
+    background-color: rgba(103, 81, 62,.95);
+}
+.tr:nth-child(2n+1){
+    background-color: rgba(103, 81, 62,.9);
+}
+.tr{
+    transition: .1s;
+}
+.tr:hover{
+    background-color: #67513e;
+}
+td,th{
+   padding: 2.5%; 
+   text-align: center;
+}
+tr td:nth-child(2),tr th:nth-child(2){
+    color: #88c8ff;
+}
+tr td:nth-child(3),tr th:nth-child(3){
+    color: #6e75a8;
+}
+tr td:nth-child(2),tr td:nth-child(3){
+    cursor: pointer;
+}
+table a{
+    display: block;width:100%;height: 100%;color: inherit;
+}

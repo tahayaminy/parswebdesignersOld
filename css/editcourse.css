@@ -1,0 +1,26 @@
+@import url("dashhead.css");
+
+form {
+    text-align: center;
+    margin: 100px 10px;
+}
+input , textarea  {
+    width: 90%;
+    max-width: 700px;
+    padding: .5%;
+    background-color: #67513e;
+    border: 2px solid #201a14;
+    border-radius: 5px;
+    resize: none;
+    caret-color: #dfe1df;
+    color: #dfe1df;
+}
+.edit{
+    float: left;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #138a36;
+    border: none;
+    color: #dfe1df;
+    cursor: pointer;
+}

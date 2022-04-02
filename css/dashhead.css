@@ -1,0 +1,36 @@
+@import url("./global/font.css");
+
+*{
+    margin: 0;padding: 0;
+}
+body,html{
+    background-color: #dfe1df;
+    height: 100%;
+    color: #201a14;
+}
+header{
+    height: 90px;
+    background-color: #151019;
+    display: flex;
+    align-items: center;  
+    direction: ltr;
+}
+header > a{
+    margin: auto 2.5%;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    transition:.2s;
+}
+header >a > i{
+    margin-top: 20px;
+    font-size: 40px;
+    color: #dfe1df;
+}
+header > a:hover{
+    border-top: 5px solid #88c8ff;
+    height: calc(100% - 5px);
+}
+header > a:hover > i{
+    margin-top: 15px;
+}

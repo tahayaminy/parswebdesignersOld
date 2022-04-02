@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text counter</title>
+    <style>
+        body{
+            text-align: center;
+            padding-top: 20%;
+        }
+        textarea{
+            width: 50%;
+            min-width: 200px;
+            border: 2px solid rgb(13, 110, 253);
+            border-radius: 5px;
+            height: 100px;
+            resize: none; 
+            direction: rtl;    
+            transition: .1s;       
+        }
+        textarea:focus{
+            outline: 5px solid rgba(13, 110, 253, .5);
+        }
+    </style>
+</head>
+<body>
+    <textarea oninput="check(this)"></textarea>
+    <p>کاراکتر: <span id="length">0</span></p>
+    <p>کلمه: <span id="word">0</span></p>
+</body>
+<script>
+    function check(dis){
+        var str=dis.value;
+        var word=str.match(/(\w+)/g).length;
+        document.getElementById('length').innerText=str.length;        
+        document.getElementById('word').innerText=word;
+    }
+</script>
+</html>

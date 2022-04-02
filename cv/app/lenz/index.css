@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body{padding-top: 2%;}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cont {
+  height: 250px;
+  border-radius: 5px;
+  position: relative;
+}
+#img {
+  height: 100%;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#lenz {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: grab;
+}
+#result{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    transition: .25s;
+    transition-property: opacity;
+    border: 5px solid rgb(230, 230, 230);
+}

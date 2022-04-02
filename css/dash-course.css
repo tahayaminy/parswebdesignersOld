@@ -1,0 +1,85 @@
+@import url("dashhead.css");
+.add {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    width: calc(35% - 20px);
+    border: 5px dashed #201a14;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+@media only screen and (max-width:768px) {
+    form{
+        display: block;
+        margin: 10% auto;
+        width: 70%;
+        height: auto;
+    }
+}
+
+form input,
+form input:hover,
+form input:focus,
+form input:-webkit-autofill,
+form input:-webkit-autofill:hover,
+form input:-webkit-autofill:focus{
+    padding: 1%;
+    width: 90%;
+    background-color: #67513e;
+    border: 2px solid #201a14;
+    border-radius: 5px;
+    caret-color: #dfe1df;
+    color: #dfe1df;
+    -webkit-text-fill-color: #dfe1df;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+form button {
+    float: left;
+    background-color: #138a36;
+    border: none;
+    padding: 2%;
+    color: #dfe1df;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*****/
+
+.SE div {
+    background-color: #88c8ff;
+    width: 80%;
+    margin: 5% auto;
+    border-radius: 5px;
+    color: #151019;
+    padding: 3%;
+}
+
+.SE>div>div {
+    background-color: #6e75a8;
+    margin: 3%;
+    color: #dfe1df;
+    position: relative;
+}
+
+.SE>div>div>span{
+    display: inline-block;
+}
+#eye{
+    margin-right: 1%;
+}
+#edit{
+   float: left;
+   cursor: pointer;
+    color: inherit;
+}
+#selectseason{
+    background-color: #201a14;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    color: #dfe1df;
+}

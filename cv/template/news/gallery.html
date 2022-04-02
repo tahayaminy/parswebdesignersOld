@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="https://parswebdesigners.github.io/icon/css/all.min.css"/>
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/iransansxv.woff" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="https://parswebdesigners.github.io/font/iransansxv.woff2" />  
+<link rel="preload" as="font" type="font/ttf" crossorigin href="https://parswebdesigners.github.io/font/hack.ttf" />
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/staticfonts/iransansx-bold.woff" />
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/staticfonts/iransansx-regular.woff" />
+<link rel="stylesheet" href="https://parswebdesigners.github.io/font/font.css"/>
+    <link rel="stylesheet" href="./css/imageSlider.css" />
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p><a href="./index.html"><i class="fas fa-home"></i></a></p>
+        <p>اجتماعی</p>
+        <p>ورزشی</p>
+        <p>علمی و فرهنگی</p>
+        <p>اقتصادی</p>
+        <a href="./gallery.html" id="slct">گالری</a>
+        <a href="./archive.html">آرشیو</a>
+      </nav>
+    </header>
+    <section class="imageSlider">
+      <div
+        onclick="show(0,this)"
+        class="contimg backstage"
+        style="background-image: url('1.jpg')"
+      ></div>
+      <div
+        id="stage"
+        class="contimg stage"
+        style="background-image: url('2.jpg')"
+      ><p id="bgTitle"></p></div>
+      <div
+        onclick="show(1,this)"
+        class="contimg backstage"
+        style="background-image: url('3.jpg')"
+      ></div>
+      <section
+        style="
+          pointer-events: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(41, 50, 65, 0.5);
+        "
+      ></section>
+      <section
+        style="
+          pointer-events: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 3;
+          width: 100%;
+          height: 100%;
+        "
+      >
+        <p class="title">سر خط خبر <i class="fas fa-angle-left"></i></p>
+      </section>
+      <section id="btns">
+        <label onclick="pos(0)" class="container">
+          <input type="radio" checked="checked" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label onclick="pos(1)" class="container">
+          <input type="radio" name="radio" checked />
+          <span class="checkmark"></span>
+        </label>
+        <label onclick="pos(2)" class="container">
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label onclick="pos(3)" class="container">
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label onclick="pos(4)" class="container">
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+      </section>
+    </section>
+    <br />
+
+    <p class="title">گالری <i class="fas fa-angle-left"></i></p>
+    <article id="gallery">
+      <div style="background-image:url('./1.jpg');"></div>
+      <div style="background-image:url('./2.jpg');"></div>
+      <div style="background-image:url('./3.jpg');"></div>
+      <div style="background-image:url('./4.jpg');"></div>
+      <div style="background-image:url('./5.jpg');"></div>
+      <div style="background-image:url('./1.jpg');"></div>
+      <div style="background-image:url('./2.jpg');"></div>
+      <div style="background-image:url('./3.jpg');"></div>
+      <div style="background-image:url('./4.jpg');"></div>
+      <div style="background-image:url('./5.jpg');"></div>
+    </article>
+    <br /><br />
+    <footer>تمام قوانین کپی رایت برای این وب پیج محفوظ میباشد.</footer>
+  </body>
+  <script src="./js/imageSlider.js"></script>
+</html>

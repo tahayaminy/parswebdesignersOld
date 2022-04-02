@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'iransansxv';
+    src: url('iransansxv.woff') format('woff-variations'), /* will be the standard and works in Safari now */
+    url('iransansxv.woff') format('woff');
+    /* for the other supporting browsers */
+    font-weight: 100 900;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: iransansx;
+    src: url('staticfonts/iransansx-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: iransansx;
+    src: url('staticfonts/iransansx-bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: en;
+    src: url("./Hack-Regular.ttf");
+}
+
+body,input,button,textarea,select {
+    font-family: iransansx, en, tahoma;
+    font-variation-settings: "wght" 500, "dots" 7;
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+    -moz-font-feature-settings: "ss03";
+    -webkit-font-feature-settings: "ss03";
+    font-feature-settings: "ss03";
+}
+
+@supports (font-variation-settings: normal) {
+    body {
+        font-family: 'iransansxv', en, tahoma;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, b, strong , .bold {
+    font-weight: bold;
+    font-variation-settings: "wght" 900, "dots" 7;
+}
+
+@media only screen and (max-width:321px) {
+    body {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18.4px;
+    }
+    h3 {
+        font-size: 16.8px;
+    }
+    h4 {
+        font-size: 15.2px;
+    }
+    h5 {
+        font-size: 13.6px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:321px) and (max-width:376px) {
+    body {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20.2px;
+    }
+    h3 {
+        font-size: 18.4px;
+    }
+    h4 {
+        font-size: 16.6px;
+    }
+    h5 {
+        font-size: 14.8px;
+    }
+    h6 {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width:376px) and (max-width:426px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width:769px) {
+    body {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 28.6px;
+    }
+    h3 {
+        font-size: 25.2px;
+    }
+    h4 {
+        font-size: 21.8px;
+    }
+    h5 {
+        font-size: 18.4px;
+    }
+    h6 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1025px) {
+    body {
+        font-size: 17px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 35.2px;
+    }
+    h3 {
+        font-size: 30.4px;
+    }
+    h4 {
+        font-size: 25.6px;
+    }
+    h5 {
+        font-size: 20.8px;
+    }
+    h6 {
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width:1025px) and (max-width:1441px) {
+    body {
+        font-size: 21px;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 39.4px;
+    }
+    h3 {
+        font-size: 34.8px;
+    }
+    h4 {
+        font-size: 30.2px;
+    }
+    h5 {
+        font-size: 25.6px;
+    }
+    h6 {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (min-width:1441px) and (max-width:2000px) {
+    body {
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 61.6px;
+    }
+    h3 {
+        font-size: 53.2px;
+    }
+    h4 {
+        font-size: 44.8px;
+    }
+    h5 {
+        font-size: 36.4px;
+    }
+    h6 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width:2000px) {
+    body {
+        font-size: 45px;
+    }
+    h1 {
+        font-size: 95px;
+    }
+    h2 {
+        font-size: 85px;
+    }
+    h3 {
+        font-size: 75px;
+    }
+    h4 {
+        font-size: 65px;
+    }
+    h5 {
+        font-size: 55px;
+    }
+    h6 {
+        font-size: 45px;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://parswebdesigners.github.io/icon/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body dir="rtl">
+    <article>
+      <section>
+        <label for="number" class="box checkbox">
+          numbers
+          <input type="checkbox" name="number" id="number" checked />
+          <span class="check"></span>
+        </label>
+        <label for="letter" class="box checkbox">
+          letters
+          <input type="checkbox" name="letter" id="letter" />
+          <span class="check"></span>
+        </label>
+        <label for="caps" class="box checkbox">
+          LETTERS
+          <input type="checkbox" name="caps" id="caps" />
+          <span class="check"></span>
+        </label>
+        <label for="symbol" class="box checkbox">
+          symbols
+          <input type="checkbox" name="symbol" id="symbol" />
+          <span class="check"></span>
+        </label>
+        <br /><br /><br>
+
+        <div>
+          <label class="checkbox">
+            8-9 characters
+            <input type="radio" name="char" value="8" checked />
+            <span class="rad check"></span>
+          </label>
+          <label class="checkbox">
+            12 characters
+            <input type="radio" name="char" value="12" />
+            <span class="rad check"></span>
+          </label>
+        </div>
+        <button onclick="createPass()">Create</button>
+        <input type="text" readonly id="output">
+        <button onclick="copyPass()">Copy</button>
+      </section>
+    </article>
+  </body>
+  <script src="./index.js"></script>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/bootstrap/dist/css/bootstrap.css" />
+    <script src="./css/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://parswebdesigners.github.io/icon/css/all.min.css"/>
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/iransansxv.woff" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="https://parswebdesigners.github.io/font/iransansxv.woff2" />  
+<link rel="preload" as="font" type="font/ttf" crossorigin href="https://parswebdesigners.github.io/font/hack.ttf" />
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/staticfonts/iransansx-bold.woff" />
+<link rel="preload" as="font" type="font/woff" crossorigin href="https://parswebdesigners.github.io/font/staticfonts/iransansx-regular.woff" />
+<link rel="stylesheet" href="https://parswebdesigners.github.io/font/font.css"/>
+    <link rel="stylesheet" href="./css/global.css">
+    <script src="./js/main.js"></script>
+</head>
+
+<body dir="rtl">
+    <nav class="container-fluid p-2">
+        <section class="row text-center">
+            <section class="col">
+                <a class="fas fa-home" href="index.html"></a>
+            </section>
+            <section class="col">
+                <a class="fas fa-video" href="video.html"></a>
+            </section>
+            <section class="col">
+                <a class="fas fa-tv" id="slct" href="seri.html"></a>
+            </section>
+            <section class="col">
+                <a class="fas fa-music" href="music.html"></a>
+            </section>
+        </section>
+    </nav>
+    <header
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      dir="ltr"
+    >
+      
+      <section class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/video/1.jpg" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/video/2.jpg" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/video/3.jpg" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/video/4.jpg" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/video/5.jpg" class="d-block w-100" />
+          </div>
+      </section>
+      <section class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="slide 1"
+        ></button>      
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="4"
+          aria-label="slide 5"
+        ></button>
+      </section>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">next</span>
+      </button>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">prev</span>
+      </button>
+    </header>
+    <br />
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4 p-2" dir="ltr">
+        <div class="col" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="details(this)" dir="rtl">
+            <div id="card" class="card">
+                <img src="./img/video/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">name</h5>
+                        <p class="card-text my-4">artist</p>
+                </div>
+            </div>
+        </div>
+        <div class="col" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="details(this)" dir="rtl">
+            <div id="card" class="card">
+                <img src="./img/video/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">name</h5>
+                        <p class="card-text my-4">artist</p>
+                </div>
+            </div>
+        </div>
+        <div class="col" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="details(this)" dir="rtl">
+            <div id="card" class="card">
+                <img src="./img/video/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">name</h5>
+                        <p class="card-text my-4">artist</p>
+                </div>
+            </div>
+        </div>
+        <div class="col" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="details(this)" dir="rtl">
+            <div id="card" class="card">
+                <img src="./img/video/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">name</h5>
+                        <p class="card-text my-4">artist</p>
+                </div>
+            </div>
+        </div>
+        <div class="col" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="details(this)" dir="rtl">
+            <div id="card" class="card">
+                <img src="./img/video/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">name</h5>
+                        <p class="card-text my-4">artist</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <br>
+    
+
+    <img id="wave" src="./img/wave.svg">
+    <footer class="container-fluid pb-0">
+        <div class="row">
+                <p>&copy; هر نوع کپی برداری بدون درج مستقیم لینک و نام این گروه غیر مجاز است.
+                </p>
+                <br>
+            </div>
+    </footer>
+    
+</body>
+
+</html>
